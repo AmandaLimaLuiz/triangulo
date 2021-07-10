@@ -12,25 +12,25 @@ void triangulo(){
 	
 	for (i = 0 ;i < 3 ; i++){
 		int n = 0;
-		printf("\nDigite o valor %d° lado do triângulo: ", n+1);
+		printf("\nDigite o %d° lado do triângulo: ", n+1);
 		scanf("%d", &a[i]);
 		fflush(stdin);
 	
 
-		printf("\nDigite o valor %d° lado do triângulo: ", n+2);
+		printf("\nDigite o %d° lado do triângulo: ", n+2);
 		scanf("%d", &b[i]);
 		fflush(stdin);
 	
 
-		printf("\nDigite o valor %d° lado do triângulo: ", n+3);
+		printf("\nDigite o %d° lado do triângulo: ", n+3);
 		scanf("%d", &c[i]);
 		fflush(stdin);
 		
-		if((a[i] + b[i]) < c[i]){
+		if((a[i] + b[i]) <= c[i]){
 			printf("\nnão formou um triângulo\n---------------------------");
-		}else if((a[i] + c[i]) < b[i]){
+		}else if((a[i] + c[i]) <= b[i]){
 			printf("\nnão formou um triângulo\n---------------------------");
-		}else if((b[i] + c[i]) < a[i]){
+		}else if((b[i] + c[i]) <= a[i]){
 			printf("\nnão formou um triângulo\n---------------------------");
 		}else{
 			printf("\nFormou um Triângulo\n---------------------------");
